@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
         {
             Fighter tester1 = new Fighter();
             tester1.setfighterWeapon("Sword_1");
-            assertTrue(tester1.getfighterWeapon().matches("Joe_1"));
+            assertTrue(tester1.getfighterWeapon().matches("Sword_1"));
         }
 
         @org.junit.Test
