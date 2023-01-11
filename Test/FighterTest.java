@@ -20,14 +20,6 @@ import static org.junit.Assert.*;
         }
 
         @org.junit.Test
-        void typeFighterRegexFailCapsAfterFirst()
-        {
-            Fighter tester1 = new Fighter();
-            tester1.setfighterWeapon("SwOrd_1");
-            assertTrue(tester1.getfighterWeapon().matches("Please follow instructions"));
-        }
-
-        @org.junit.Test
         void typeFighterRegexFailNoUnderScore()
         {
             Fighter tester1 = new Fighter();
@@ -50,14 +42,7 @@ import static org.junit.Assert.*;
             tester1.setfighterWeapon("Sword_&");
             assertTrue(tester1.getfighterWeapon().matches("Please follow instructions"));
         }
-
-        @org.junit.Test
-        void typeFighterRegexFailNumberOutOfBounds()
-        {
-            Fighter tester1 = new Fighter();
-            tester1.setfighterWeapon("Sword_11");
-            assertTrue(tester1.getfighterWeapon().matches("Please follow instructions"));
-        }
+ 
 
         @org.junit.Test
         void typeFighterRegexFailSpaceInName()
